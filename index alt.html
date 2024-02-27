@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzerando</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="./icons/icon_star.png">
+    <script src="script.js"></script>
+</head>
+
+
+
+<body onload="start()">
+    <div>
+        <div id="main" class="main">
+            <header id="header" class="header">
+                <div class="headlineText">PIZZERANDO</div>
+                <div>Speisekarte</div>
+            </header>
+            
+            <div id="content" class="content">
+                <section id="storeSection" class="storeSection">
+                    <section id="storeHeader" class="storeHeader">
+                        <div id="storeImg" class="storeImg"><img src="./img/pizzaCompanyImg.jpg"></div>
+                        <div id="storeDescription" class="storeDescription">FABOLOUS PIZZA
+                            <div id="storeHeaderIcons" class="storeHeaderIcons">
+                                <div id="storeName" class="storeName"><img src="./icons/icon-heart.png" alt=""></div>
+                                <div id="storeLike" class="storeLike"><img src="./icons/icon-bookmark.png" alt=""></div>
+                            </div>
+                        </div>
+
+                    </section>
+                    <section id="storeMainSection" class="storeMainSection">
+                        <!--<div id="storeNameandLike" class="storeNameandLike">
+                            <div id="storeName" class="storeName"><b>THE PIZZA COMPANY</b>&nbsp&nbsp&nbsp</div>
+                            <div id="storeLike" class="storeLike">GEFÄLLT 2035 PERSONEN</div>
+                        </div> -->
+                        <div id="storeStarsAndReviews" class="storeStarsAndReviews">
+                            <div id="stars" class="stars"><img src="./icons/icon_star.png" alt=""><img
+                                    src="./icons/icon_star.png" alt=""><img src="./icons/icon_star.png" alt=""><img
+                                    src="./icons/icon_star.png" alt=""><img src="./icons/icon_star.png" alt=""></div>
+                            <div id="reviews" class="reviews"><a href="">195 Bewertungen</a></div>
+                        </div>
+                        <div id="placeholderStoreStarsAndReviews" class="placeholderStoreStarsAndReviews"></div>
+                        <div id="deliverMinimumContainer" class="deliverMinimumContainer">
+                            <div id="deliverMinimumByCar" class="deliverMinimumByCar">Mindestbestellwert: <b>10,00€</b>
+                                &nbsp&nbsp&nbsp</div>
+                            <div id="deliverMinimumByBike" class="deliverMinimumByBike"> Ansonsten betragen die
+                                Lieferkosten: <b>2,50€</b></div>
+                        </div>
+                        <div id="storeOffers" class="storeOffers">
+                            <h3 id="storeOffersHeadline" class="storeOffersHeadline">Angebote</h3>
+                            <div id="StoreOffersDaily" class="StoreOffersDaily">
+                                <div id="StoreOffersDailyCardBox" class="StoreOffersDailyCardBox">
+                                    <div id="StoreOffersDailyHeadline" class="StoreOffersDailyHeadline">Pizza des Monats
+                                        - Oktober</div>
+                                    <div id="StoreOffersDailyMenu" class="StoreOffersDailyMenu"><img
+                                            src="./img/PizzaSalami.jpg" alt=""></div>
+                                    <div id="StoreOffersDailyPrice" class="StoreOffersDailyPrice"><b>10,99€</b></div>
+                                    <div id="StoreOffersDailyDeliverAndTake" class="StoreOffersDailyDeliverAndTake">
+                                        - - - Lieferung ohne Aufpreis - - -
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <div id="navMenu" class="navMenu">
+                        <div id="navSearch" class="navSearch"></div>
+                        <div id="navMenuCategory" class="navMenuCategory">
+
+                            <div id="navLiked" class="navLiked">
+                                <div id="navIMG" class="navIMG"></div>
+                                <div id="navTxt" class="navTxt">Beliebt</div>
+                            </div>
+                            <div>
+                                <div id="navTxt" class="navTxt">Mittagsangebot</div>
+                            </div>
+                            <div>
+                                <div id="navTxt" class="navTxt">PizzaBox</div>
+                            </div>
+                            <div>
+                                <div id="navTxt" class="navTxt">Pizza World Kitchen</div>
+                            </div>
+                            <div>
+                                <div id="navTxt" class="navTxt">Pizza Meatlover</div>
+                            </div>
+                            <div>
+                                <div id="navTxt" class="navTxt">Pizza Traditionale</div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div id="storeContent" class="storeContent">
+                        <section id="menuList" class="menuList">
+                            <section id="popularItems" class="popularItems">
+                                <div id="popularItemsHeader" class="popularItemsHeader"></div>
+                                <div id="popularItemsList" class="popularItemsList">
+                                    <div id="popularItemsListDetail" class="popularItemsListDetail">
+                                        <ul class="popularMenuList" id="popularMenuList">
+                                            <li>
+                                                <div class="menuItem">
+                                                    <div id="pizzaMagharita" class="popularItem"><b>Pizza Magharita</b>
+                                                        <div class="popularItemDescription">mit Tomatensauce und
+                                                            herzhaften Gouda</div>
+                                                        <div class="popularItemSize">Classic 26cm Durchmesser</div>
+                                                        <div class="popularItemPrice">8,99€</div>
+                                                    </div>
+                                                    <div class="popularItemIMGAndPLUS">
+                                                        <div class="popularItemIMG"><img src="./img/pizzaMagarita.jpg"
+                                                                alt=""></div>
+                                                        <div class="popularItemPlus"><a href="#" onclick="addToCart(0)">+</a></div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="menuItem">
+                                                    <div id="pizzaHot" class="popularItem"><b>Pizza Hot</b>
+                                                        <div class="popularItemDescription">mit scharfer Tomatensauce,
+                                                            Peperonis, Perperonisalami und
+                                                            herzhaften Gouda</div>
+                                                        <div class="popularItemSize">Classic 26cm Durchmesser</div>
+                                                        <div class="popularItemPrice">13,99€</div>
+                                                    </div>
+                                                    <div class="popularItemIMGAndPLUS">
+                                                        <div class="popularItemIMG"><img src="./img/pizzaMagarita.jpg"
+                                                                alt=""></div>
+                                                        <div class="popularItemPlus"><a href="#" onclick="addToCart(1)">+</a></div>
+                                                    </div>
+
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="menuItem">
+                                                    <div id="pizzaBread" class="popularItem"><b>Pizza Brötchen</b>
+                                                        <div class="popularItemDescription">mit scharfer Tomatensauce,
+                                                            Peperonis, Perperonisalami und
+                                                            herzhaften Gouda</div>
+                                                        <div class="popularItemSize">Classic 26cm Durchmesser</div>
+                                                        <div class="popularItemPrice">13,99€</div>
+                                                    </div>
+                                                    <div class="popularItemIMGAndPLUS">
+                                                        <div class="popularItemIMG"><img src="./img/pizzaMagarita.jpg"
+                                                                alt=""></div>
+                                                        <div class="popularItemPlus"><a href="#" onclick="addToCart(2)">+</a></div>
+                                                    </div>
+
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="menuItem">
+                                                    <div id="pizzyGyros" class="popularItem"><b>Pizza Gyros</b>
+                                                        <div class="popularItemDescription">mit scharfer Tomatensauce,
+                                                            Peperonis, Perperonisalami und
+                                                            herzhaften Gouda</div>
+                                                        <div class="popularItemSize">Classic 26cm Durchmesser</div>
+                                                        <div class="popularItemPrice">13,99€</div>
+                                                    </div>
+                                                    <div class="popularItemIMGAndPLUS">
+                                                        <div class="popularItemIMG"><img src="./img/pizzaMagarita.jpg"
+                                                                alt=""></div>
+                                                        <div class="popularItemPlus"><a href="#" onclick="addToCart(3)">+</a></div>
+                                                    </div>
+
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="menuItem">
+                                                    <div id="pizzaMeatlover" class="popularItem"><b>Pizza Meatlover</b>
+                                                        <div class="popularItemDescription">mit scharfer Tomatensauce,
+                                                            Peperonis, Perperonisalami und
+                                                            herzhaften Gouda</div>
+                                                        <div class="popularItemSize">Classic 26cm Durchmesser</div>
+                                                        <div class="popularItemPrice">13,99€</div>
+                                                    </div>
+                                                    <div class="popularItemIMGAndPLUS">
+                                                        <div class="popularItemIMG"><img src="./img/pizzaMagarita.jpg"
+                                                                alt=""></div>
+                                                        <div class="popularItemPlus"><a href="#" onclick="addToCart(4)">+</a></div>
+                                                    </div>
+
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="menuItem">
+                                                    <div id="pizzaDelMare" class="popularItem"><b>Pizza
+                                                            Meeresfrüchte</b>
+                                                        <div class="popularItemDescription">mit scharfer Tomatensauce,
+                                                            Peperonis, Perperonisalami und
+                                                            herzhaften Gouda</div>
+                                                        <div class="popularItemSize">Classic 26cm Durchmesser</div>
+                                                        <div class="popularItemPrice">13,99€</div>
+                                                    </div>
+                                                    <div class="popularItemIMGAndPLUS">
+                                                        <div class="popularItemIMG"><img src="./img/pizzaMagarita.jpg"
+                                                                alt=""></div>
+                                                        <div class="popularItemPlus"><a href="#" onclick="addToCart(5)">+</a></div>
+                                                    </div>
+
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="menuItem">
+                                                    <div id="pizzaHollondaise" class="popularItem"><b>Pizza
+                                                            Hollondaise</b>
+                                                        <div class="popularItemDescription">mit scharfer Tomatensauce,
+                                                            Peperonis, Perperonisalami und
+                                                            herzhaften Gouda</div>
+                                                        <div class="popularItemSize">Classic 26cm Durchmesser</div>
+                                                        <div class="popularItemPrice">13,99€</div>
+                                                    </div>
+                                                    <div class="popularItemIMGAndPLUS">
+                                                        <div class="popularItemIMG"><img src="./img/pizzaMagarita.jpg"
+                                                                alt=""></div>
+                                                        <div class="popularItemPlus"><a href="#" onclick="addToCart(6)">+</a></div>
+                                                    </div>
+
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="menuItem">
+                                                    <div id="pizzaMeatAndOnion" class="popularItem"><b>Pizza des
+                                                            Monats</b>
+                                                        <div class="popularItemDescription">mit scharfer Tomatensauce,
+                                                            Peperonis, Perperonisalami und
+                                                            herzhaften Gouda</div>
+                                                        <div class="popularItemSize">Classic 26cm Durchmesser</div>
+                                                        <div class="popularItemPrice">13,99€</div>
+                                                    </div>
+                                                    <div class="popularItemIMGAndPLUS">
+                                                        <div class="popularItemIMG"><img src="./img/pizzaMagarita.jpg"
+                                                                alt=""></div>
+                                                        <div class="popularItemPlus"><a href="#" onclick="addToCart(7)">+</a></div>
+                                                    </div>
+
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="menuItem">
+                                                    <div id="salatChef" class="popularItem"><b>Chefsalat</b>
+                                                        <div class="popularItemDescription">mit scharfer Tomatensauce,
+                                                            Peperonis, Perperonisalami und
+                                                            herzhaften Gouda</div>
+                                                        <div class="popularItemSize">Classic 26cm Durchmesser</div>
+                                                        <div class="popularItemPrice">13,99€</div>
+                                                    </div>
+                                                    <div class="popularItemIMGAndPLUS">
+                                                        <div class="popularItemIMG"><img src="./img/pizzaMagarita.jpg"
+                                                                alt=""></div>
+                                                        <div class="popularItemPlus"><a href="#" onclick="addToCart(8)">+</a></div>
+                                                    </div>
+
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="menuItem">
+                                                    <div id="pizzaBox" class="popularItem"><b>Pizza Box</b>
+                                                        <div class="popularItemDescription">mit scharfer Tomatensauce,
+                                                            Peperonis, Perperonisalami und
+                                                            herzhaften Gouda</div>
+                                                        <div class="popularItemSize">Classic 26cm Durchmesser</div>
+                                                        <div class="popularItemPrice">13,99€</div>
+                                                    </div>
+                                                    <div class="popularItemIMGAndPLUS">
+                                                        <div class="popularItemIMG"><img src="./img/pizzaMagarita.jpg"
+                                                                alt=""></div>
+                                                        <div class="popularItemPlus"><a href="#" onclick="addToCart(9)">+</a></div>
+                                                    </div>
+
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="menuItem">
+                                                    <div id="water" class="popularItem"><b>Wasser</b>
+                                                        <div class="popularItemDescription">mit scharfer Tomatensauce,
+                                                            Peperonis, Perperonisalami und
+                                                            herzhaften Gouda</div>
+                                                        <div class="popularItemSize">Classic 26cm Durchmesser</div>
+                                                        <div class="popularItemPrice">13,99€</div>
+                                                    </div>
+                                                    <div class="popularItemIMGAndPLUS">
+                                                        <div class="popularItemIMG"><img src="./img/pizzaMagarita.jpg"
+                                                                alt=""></div>
+                                                        <div class="popularItemPlus"><a href="#" onclick="addToCart(10)">+</a></div>
+                                                    </div>
+
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="menuItem">
+                                                    <div id="softdrinks" class="popularItem"><b>Sotfdrinks</b>
+                                                        <div class="popularItemDescription">mit scharfer Tomatensauce,
+                                                            Peperonis, Perperonisalami und
+                                                            herzhaften Gouda</div>
+                                                        <div class="popularItemSize">Classic 26cm Durchmesser</div>
+                                                        <div class="popularItemPrice">13,99€</div>
+                                                    </div>
+                                                    <div class="popularItemIMGAndPLUS">
+                                                        <div class="popularItemIMG"><img src="./img/pizzaMagarita.jpg"
+                                                                alt=""></div>
+                                                        <div class="popularItemPlus"><a href="#" onclick="addToCart(11)">+</a></div>
+                                                    </div>
+
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="menuItem">
+                                                    <div id="wine" class="popularItem"><b>Wein</b>
+                                                        <div class="popularItemDescription">mit scharfer Tomatensauce,
+                                                            Peperonis, Perperonisalami und
+                                                            herzhaften Gouda</div>
+                                                        <div class="popularItemSize">Classic 26cm Durchmesser</div>
+                                                        <div class="popularItemPrice">13,99€</div>
+                                                    </div>
+                                                    <div class="popularItemIMGAndPLUS">
+                                                        <div class="popularItemIMG"><img src="./img/pizzaMagarita.jpg"
+                                                                alt=""></div>
+                                                        <div class="popularItemPlus"><a href="#" onclick="addToCart(12)">+</a></div>
+                                                    </div>
+
+                                                </div>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+
+                    </div>
+                </section>
+                </section>
+                <aside id="sticky" class="sticky">
+                    <div id="sidebar" class="sidebar">
+                        <div id="contentWrapper" class="contentWrapper">
+                            <div id="sidebarTitle" class="sidebarTitle"></div>
+                            <h2>Warenkorb</h2>
+                            <div id="cartBox" class="cartBox">
+                                <div id="cart" class="cart">
+
+                                </div>
+                            </div>
+                            <div id="orderStatus" class="orderStatus d-none">
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                </aside>
+            </div>
+
+        </div>
+
+        </section>
+        </section>
+    </div>
+    </div>
+    </div>
+    <footer>Footer</footer>
+</body>
+
+</html>

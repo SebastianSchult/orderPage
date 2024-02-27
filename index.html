@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzerando</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="./icons/icon_star.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="script.js"></script>
+</head>
+
+
+
+<body onload="start()">
+    <div>
+        <div id="main" class="main">
+            <header id="header" class="header">
+                <div class="headlineText">PIZZERANDO</div>
+                <div>Speisekarte</div>
+            </header>
+
+            <div id="content" class="content">
+                <section id="storeSection" class="storeSection">
+                    <section id="storeHeader" class="storeHeader">
+                        <div id="storeImg" class="storeImg"><img src="./img/pizzaCompanyImg.jpg"></div>
+                        <div id="storeDescription" class="storeDescription">FABOLOUS PIZZA
+                            <div id="storeHeaderIcons" class="storeHeaderIcons">
+                                <div id="storeName" class="storeName"><img src="./icons/icon-heart.png" alt=""></div>
+                                <div id="storeLike" class="storeLike"><img src="./icons/icon-bookmark.png" alt=""></div>
+                            </div>
+                        </div>
+
+                    </section>
+                    <section id="storeMainSection" class="storeMainSection">
+                        <!--<div id="storeNameandLike" class="storeNameandLike">
+                            <div id="storeName" class="storeName"><b>THE PIZZA COMPANY</b>&nbsp&nbsp&nbsp</div>
+                            <div id="storeLike" class="storeLike">GEFÄLLT 2035 PERSONEN</div>
+                        </div> -->
+                        <div id="storeStarsAndReviews" class="storeStarsAndReviews">
+                            <div id="stars" class="stars"><img src="./icons/icon_star.png" alt=""><img
+                                    src="./icons/icon_star.png" alt=""><img src="./icons/icon_star.png" alt=""><img
+                                    src="./icons/icon_star.png" alt=""><img src="./icons/icon_star.png" alt=""></div>
+                            <div id="reviews" class="reviews"><a href="">195 Bewertungen</a></div>
+                        </div>
+                        <div id="placeholderStoreStarsAndReviews" class="placeholderStoreStarsAndReviews"></div>
+                        <div id="deliverMinimumContainer" class="deliverMinimumContainer">
+                            <div id="deliverMinimumByCar" class="deliverMinimumByCar">Mindestbestellwert: <b>10,00€</b>
+                                &nbsp&nbsp&nbsp</div>
+                            <div id="deliverMinimumByBike" class="deliverMinimumByBike"> Ansonsten betragen die
+                                Lieferkosten: <b>2,50€</b></div>
+                        </div>
+                        <div id="shop" class="shop">
+                            <h3 id="storeOffersHeadline" class="storeOffersHeadline">Angebote</h3>
+                            <div id="StoreOffersDaily" class="StoreOffersDaily">
+                                <div id="StoreOffersDailyCardBox" class="StoreOffersDailyCardBox">
+                                    <div id="StoreOffersDailyHeadline" class="StoreOffersDailyHeadline">Pizza des Monats
+                                        - Oktober</div>
+                                    <div id="StoreOffersDailyMenu" class="StoreOffersDailyMenu"><img
+                                            src="./img/PizzaSalami.jpg" alt=""></div>
+                                    <div id="StoreOffersDailyPrice" class="StoreOffersDailyPrice"><b>10,99€</b></div>
+                                    <div id="StoreOffersDailyDeliverAndTake" class="StoreOffersDailyDeliverAndTake">
+                                        - - - Lieferung ohne Aufpreis - - -
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <div id="navMenu" class="navMenu">
+                        <div id="navSearch" class="navSearch"></div>
+                        <div id="navMenuCategory" class="navMenuCategory">
+
+                            <div id="navLiked" class="navLiked">
+                                <div id="navIMG" class="navIMG"></div>
+                                <div id="navTxt" class="navTxt">Beliebt</div>
+                            </div>
+                            <div>
+                                <div id="navTxt" class="navTxt">Mittagsangebot</div>
+                            </div>
+                            <div>
+                                <div id="navTxt" class="navTxt">PizzaBox</div>
+                            </div>
+                            <div>
+                                <div id="navTxt" class="navTxt">Pizza World Kitchen</div>
+                            </div>
+                            <div>
+                                <div id="navTxt" class="navTxt">Pizza Meatlover</div>
+                            </div>
+                            <div>
+                                <div id="navTxt" class="navTxt">Pizza Traditionale</div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div id="storeContent" class="storeContent">
+                    </div>
+                </section>
+                <aside id="sticky" class="sticky">
+                    <div id="sidebar" class="sidebar">
+                        <div id="cart" class="cart">
+                            <div id="sidebarTitle" class="sidebarTitle">
+                                <h2>Warenkorb</h2> <i class="bi bi-cart4"></i><div id="cartAmount" class="cartAmount">0</div>
+                            
+                            </div>
+
+                            <div id="emptyCart" class="emptyCart"><br>Fülle Deinen Warenkorb und suche Dir etwas von unseren leckeren Gerichten aus</div>
+                            <div id="cartBox" class="cartBox">
+                                <div id="cart" class="cart">
+                                    
+                                </div>
+                            </div>
+                            <div id="orderStatus" class="orderStatus d-none">
+
+                            </div>
+
+                        </div>
+                    </div>
+                </aside>
+
+                </section>
+            </div>
+        </div>
+    </div>
+    <footer>Footer</footer>
+</body>
+
+</html>
