@@ -5,15 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pizzerando</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="src/style.css">
     <link rel="icon" type="image/png" href="./icons/icon_star.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <script src="script.js"></script>
+    
 </head>
 
 
 
-<body onload="start()">
+<body>
     <div>
         <div id="main" class="main">
             <header id="header" class="header">
@@ -51,7 +51,7 @@
                             <div id="deliverMinimumByBike" class="deliverMinimumByBike"> Ansonsten betragen die
                                 Lieferkosten: <b>2,50€</b></div>
                         </div>
-                        <div id="shop" class="shop">
+                        <div id="shopi" class="shopi">
                             <h3 id="storeOffersHeadline" class="storeOffersHeadline">Angebote</h3>
                             <div id="StoreOffersDaily" class="StoreOffersDaily">
                                 <div id="StoreOffersDailyCardBox" class="StoreOffersDailyCardBox">
@@ -94,21 +94,22 @@
 
                         </div>
                     </div>
-                    <div id="storeContent" class="storeContent">
+                    <div id="shop" class="shop">
+
                     </div>
                 </section>
                 <aside id="sticky" class="sticky">
                     <div id="sidebar" class="sidebar">
                         <div id="cart" class="cart">
                             <div id="sidebarTitle" class="sidebarTitle">
-                                <h2>Warenkorb</h2> <i class="bi bi-cart4"></i><div id="cartAmount" class="cartAmount">0</div>
-                            
-                            </div>
+                                <h2>Warenkorb</h2> <i class="bi bi-cart4"></i>
+                                <div id="cartAmount" class="cartAmount">0</div>
 
-                            <div id="emptyCart" class="emptyCart"><br>Fülle Deinen Warenkorb und suche Dir etwas von unseren leckeren Gerichten aus</div>
+                            </div>
+                            <div id="label" class="label"></div>
                             <div id="cartBox" class="cartBox">
-                                <div id="cart" class="cart">
-                                    
+                                <div id="shopping-cart" class="shopping-cart">
+
                                 </div>
                             </div>
                             <div id="orderStatus" class="orderStatus d-none">
@@ -125,5 +126,7 @@
     </div>
     <footer>Footer</footer>
 </body>
+<script src="src/Data.js" ></script>
+<script src="src/script.js"></script>
 
 </html>
