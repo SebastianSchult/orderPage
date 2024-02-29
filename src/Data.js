@@ -1,6 +1,6 @@
-let shopItemsData = [{
+let products = [{
     id: "a",
-    food: "Pizza Magharita",
+    name: "Pizza Magharita",
     incredidents: "mit Tomatensauce und herzhaften Gouda",
     price: 8.99,
     image: 'img/pizzaMagarita.jpg',
@@ -8,7 +8,7 @@ let shopItemsData = [{
 },
 {
     id: "b",
-    food: "Pizza Hot",
+    name: "Pizza Hot",
     incredidents: "mit scharfer Tomatensauce, Peperonisalami und herzhaften Gouda",
     price: 13.99,
     image: 'img/PizzaSalami.jpg',
@@ -16,7 +16,7 @@ let shopItemsData = [{
 },
 {
     id: "c",
-    food: "Pizza Brötchen",
+    name: "Pizza Brötchen",
     incredidents: "mit Tomatensauce und herzhaften Gouda und Knoblauchdressing",
     price: 5.99,
     image: 'img/pizzaMagarita.jpg',
@@ -24,7 +24,7 @@ let shopItemsData = [{
 },
 {
     id: "d",
-    food: "Pizza Gyros",
+    name: "Pizza Gyros",
     incredidents: "mit Tomatensauce, Tzatziki, Gyros und herzhaften Gouda",
     price: 12.99,
     image: 'img/pizzaMagarita.jpg',
@@ -32,7 +32,7 @@ let shopItemsData = [{
 },
 {
     id: "e",
-    food: "Pizza Meatlover",
+    name: "Pizza Meatlover",
     incredidents: "mit Tomatensauce, viel Fleisch und herzhaften Gouda",
     price: 15.99,
     image: 'img/pizzaMagarita.jpg',
@@ -40,7 +40,7 @@ let shopItemsData = [{
 },
 {
     id: "f",
-    food: "Pizza Hollondaise",
+    name: "Pizza Hollondaise",
     incredidents: "mit Tomatensauce und herzhaften Gouda",
     price: 11.99,
     image: 'img/pizzaMagarita.jpg',
@@ -48,7 +48,7 @@ let shopItemsData = [{
 },
 {
     id: "g",
-    food: "Pizza des Monats",
+    name: "Pizza des Monats",
     incredidents: "mit Tomatensauce und herzhaften Gouda",
     price: 9.99,
     image: 'img/pizzaMagarita.jpg',
@@ -56,7 +56,7 @@ let shopItemsData = [{
 },
 {
     id: "h",
-    food: "Chefsalat",
+    name: "Chefsalat",
     incredidents: "mit Tomatensauce und herzhaften Gouda",
     price: 5.99,
     image: 'img/pizzaMagarita.jpg',
@@ -64,7 +64,7 @@ let shopItemsData = [{
 },
 {
     id: "i",
-    food: "Pizzabox",
+    name: "Pizzabox",
     incredidents: "mit Tomatensauce und herzhaften Gouda",
     price: 11.99,
     image: 'img/pizzaMagarita.jpg',
@@ -72,7 +72,7 @@ let shopItemsData = [{
 },
 {
     id: "j",
-    food: "Wasser",
+    name: "Wasser",
     incredidents: "mit Tomatensauce und herzhaften Gouda",
     price: 2.49,
     image: 'img/pizzaMagarita.jpg',
@@ -80,7 +80,7 @@ let shopItemsData = [{
 },
 {
     id: "k",
-    food: "Softdrinks",
+    name: "Softdrinks",
     incredidents: "mit Tomatensauce und herzhaften Gouda",
     price: 2.99,
     image: 'img/pizzaMagarita.jpg',
@@ -88,7 +88,7 @@ let shopItemsData = [{
 },
 {
     id: "l",
-    food: "Wein",
+    name: "Wein",
     incredidents: "mit Tomatensauce und herzhaften Gouda",
     price: 7.99,
     image: 'img/pizzaMagarita.jpg',
